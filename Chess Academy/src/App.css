@@ -1,0 +1,16 @@
+/* src/App.css */
+.app-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-panel {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+

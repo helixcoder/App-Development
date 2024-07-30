@@ -1,0 +1,112 @@
+/* Chatbot.css */
+
+.chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 320px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chat-header {
+    background-color: #74512D;
+    color: #ecf0f1;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #74512D;
+  }
+  
+  .chat-header h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .toggle-btn {
+    font-size: 22px;
+    line-height: 1;
+    transition: transform 0.3s;
+  }
+  
+  .toggle-btn:hover {
+    transform: rotate(90deg);
+  }
+  
+  .chat-window {
+    background-color: #ffffff;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .messages {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+  }
+  
+  .message {
+    margin-bottom: 12px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 85%;
+    word-wrap: break-word;
+    position: relative;
+  }
+  
+  .message.user {
+    background-color: #AF8F6F;
+    color: #ffffff;
+    align-self: flex-end;
+    border-bottom-right-radius: 0;
+  }
+  
+  .message.bot {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+  }
+  
+  .input-area {
+    display: flex;
+    border-top: 1px solid #bdc3c7;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .input-area input {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 20px;
+    margin-right: 10px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .input-area input:focus {
+    border-color: #74512D;
+  }
+  
+  .input-area button {
+    background-color: #74512D;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    outline: none;
+    transition: background-color 0.3s;
+  }
+  
+  .input-area button:hover {
+    background-color: #AF8F6F;
+  }
+  
